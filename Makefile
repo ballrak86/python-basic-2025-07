@@ -6,3 +6,6 @@ test:
 
 coverage:
 	poetry run pytest -s --cov --cov-report html --cov-fail-under 86
+
+coveralls:
+	poetry run coverage run --source=mypkg -m pytest tests coveralls
